@@ -1,19 +1,36 @@
 #include "mainwindow.h"
+#include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent),
-    menuWidget(0),
-    puntajeWidget(0)
-
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
 {
-    menuWidget=new QWidget(this);
-    mimenu.setupUi(menuWidget);
+    ui->setupUi(this);
 
-    puntajeWidget=new QWidget(this);
-    mipuntaje.setupUi(puntajeWidget);
 }
 
 MainWindow::~MainWindow()
 {
+    delete ui;
+}
+
+
+void MainWindow::on_comenzar_clicked()
+{
+
+
+    objeto1.exec();
+}
+
+
+void MainWindow::on_puntuacion_clicked()
+{
+  objeto1.setVisible(false);
+}
+
+
+void MainWindow::on_salir_clicked()
+{
+
 }
 

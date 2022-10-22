@@ -17,12 +17,14 @@ HEADERS += \
     juego.h \
     mainwindow.h
 
+FORMS += \
+    juego.ui \
+    mainwindow.ui
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-FORMS += \
-    juego.ui \
-    menu.ui \
-    puntuacion.ui
+RESOURCES += \
+    imagenes.qrc
