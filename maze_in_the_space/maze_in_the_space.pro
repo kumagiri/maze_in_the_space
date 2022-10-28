@@ -10,11 +10,13 @@ CONFIG += c++11
 
 SOURCES += \
     juego.cpp \
+    laberinto_1.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     juego.h \
+    laberinto_1.h \
     mainwindow.h
 
 FORMS += \

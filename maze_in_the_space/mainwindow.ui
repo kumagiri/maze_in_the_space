@@ -40,38 +40,18 @@ border:3px solid silver;
 border-radius:7px
 }</string>
    </property>
-   <widget class="QPushButton" name="comenzar">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>270</y>
-      <width>150</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Mistral</family>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>COMENZAR</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="puntuacion">
     <property name="geometry">
      <rect>
       <x>380</x>
       <y>340</y>
-      <width>150</width>
+      <width>180</width>
       <height>50</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Mistral</family>
-      <pointsize>22</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
@@ -83,18 +63,35 @@ border-radius:7px
      <rect>
       <x>380</x>
       <y>410</y>
-      <width>150</width>
+      <width>180</width>
       <height>50</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Mistral</family>
-      <pointsize>24</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
      <string>SALIR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="comenzar">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>270</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>COMENZAR</string>
     </property>
    </widget>
   </widget>

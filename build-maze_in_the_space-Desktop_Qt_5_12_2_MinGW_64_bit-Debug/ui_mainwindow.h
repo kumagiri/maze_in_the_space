@@ -21,9 +21,9 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *comenzar;
     QPushButton *puntuacion;
     QPushButton *salir;
+    QPushButton *comenzar;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -56,24 +56,20 @@ public:
 "border:3px solid silver;\n"
 "border-radius:7px\n"
 "}"));
-        comenzar = new QPushButton(centralwidget);
-        comenzar->setObjectName(QString::fromUtf8("comenzar"));
-        comenzar->setGeometry(QRect(380, 270, 150, 50));
-        QFont font;
-        font.setFamily(QString::fromUtf8("Mistral"));
-        font.setPointSize(24);
-        comenzar->setFont(font);
         puntuacion = new QPushButton(centralwidget);
         puntuacion->setObjectName(QString::fromUtf8("puntuacion"));
-        puntuacion->setGeometry(QRect(380, 340, 150, 50));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Mistral"));
-        font1.setPointSize(22);
-        puntuacion->setFont(font1);
+        puntuacion->setGeometry(QRect(380, 340, 180, 50));
+        QFont font;
+        font.setPointSize(20);
+        puntuacion->setFont(font);
         salir = new QPushButton(centralwidget);
         salir->setObjectName(QString::fromUtf8("salir"));
-        salir->setGeometry(QRect(380, 410, 150, 50));
+        salir->setGeometry(QRect(380, 410, 180, 50));
         salir->setFont(font);
+        comenzar = new QPushButton(centralwidget);
+        comenzar->setObjectName(QString::fromUtf8("comenzar"));
+        comenzar->setGeometry(QRect(380, 270, 180, 50));
+        comenzar->setFont(font);
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -84,9 +80,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        comenzar->setText(QApplication::translate("MainWindow", "COMENZAR", nullptr));
         puntuacion->setText(QApplication::translate("MainWindow", "PUNTUACION", nullptr));
         salir->setText(QApplication::translate("MainWindow", "SALIR", nullptr));
+        comenzar->setText(QApplication::translate("MainWindow", "COMENZAR", nullptr));
     } // retranslateUi
 
 };

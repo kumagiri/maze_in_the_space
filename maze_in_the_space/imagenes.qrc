@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>menu1.png</file>
-        <file>boton1.png</file>
+        <file>laberinto.png</file>
+        <file>fondo_juego.jpg</file>
     </qresource>
 </RCC>
