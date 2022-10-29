@@ -10,18 +10,22 @@ CONFIG += c++11
 
 SOURCES += \
     juego.cpp \
-    laberinto_1.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    puntuacion.cpp \
+    usuario.cpp
 
 HEADERS += \
     juego.h \
-    laberinto_1.h \
-    mainwindow.h
+    mainwindow.h \
+    puntuacion.h \
+    usuario.h
 
 FORMS += \
     juego.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    puntuacion.ui \
+    usuario.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

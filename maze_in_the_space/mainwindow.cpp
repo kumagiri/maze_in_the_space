@@ -1,5 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "juego.h"
+#include "puntuacion.h"
+#include "usuario.h"
+#include <QWidget>
+#include <QMdiSubWindow>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -21,10 +26,11 @@ MainWindow::~MainWindow()
 void MainWindow::on_comenzar_clicked()
 {
 
-    objeto1.showMaximized();
-    objeto1.isMaximized();
 
-    objeto1.exec();
+   juego *objeto2=new juego(this);
+   objeto2->show();
+
+
 
 
 }
@@ -32,7 +38,8 @@ void MainWindow::on_comenzar_clicked()
 
 void MainWindow::on_puntuacion_clicked()
 {
-
+    puntuacion *objeto1=new puntuacion(this);
+    objeto1->show();
 }
 
 
@@ -43,5 +50,10 @@ void MainWindow::on_salir_clicked()
 {
     close();
     qApp->closeAllWindows();
+}
+
+void MainWindow::loadSubWindow(QWidget *widget)
+{
+
 }
 
