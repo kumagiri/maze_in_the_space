@@ -7,91 +7,55 @@
     <x>0</x>
     <y>0</y>
     <width>900</width>
-    <height>540</height>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Maze in the space</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+background-image: url(:/menu1.png);
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <property name="styleSheet">
-    <string notr="true">#centralwidget{
-background-image:url(://menu1.png);
-}
-#comenzar{
-color:black;
-qproperty-alignement:aligncenter;
-background:teal;
-border:3px solid silver;
-border-radius:7px
-}
-#puntuacion{
-color:black;
-qproperty-alignement:aligncenter;
-background:teal;
-border:3px solid silver;
-border-radius:7px
-}
-#salir{
-color:black;
-qproperty-alignement:aligncenter;
-background:teal;
-border:3px solid silver;
-border-radius:7px
-}</string>
-   </property>
+   <widget class="QPushButton" name="comenzar">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>280</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>comenzar</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="puntuacion">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>420</x>
       <y>340</y>
-      <width>180</width>
-      <height>50</height>
+      <width>80</width>
+      <height>24</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
     <property name="text">
-     <string>PUNTUACION</string>
+     <string>puntuacion</string>
     </property>
    </widget>
    <widget class="QPushButton" name="salir">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>410</y>
-      <width>180</width>
-      <height>50</height>
+      <x>420</x>
+      <y>400</y>
+      <width>80</width>
+      <height>24</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
     <property name="text">
-     <string>SALIR</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="comenzar">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>270</y>
-      <width>180</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>COMENZAR</string>
+     <string>salir</string>
     </property>
    </widget>
   </widget>

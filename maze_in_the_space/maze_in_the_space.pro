@@ -9,23 +9,23 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    formulario.cpp \
     juego.cpp \
     main.cpp \
     mainwindow.cpp \
-    puntuacion.cpp \
-    usuario.cpp
+    puntuacion.cpp
 
 HEADERS += \
+    formulario.h \
     juego.h \
     mainwindow.h \
-    puntuacion.h \
-    usuario.h
+    puntuacion.h
 
 FORMS += \
+    formulario.ui \
     juego.ui \
     mainwindow.ui \
-    puntuacion.ui \
-    usuario.ui
+    puntuacion.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

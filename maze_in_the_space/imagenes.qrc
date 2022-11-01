@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>menu1.png</file>
-        <file>laberinto.png</file>
-        <file>fondo_juego.jpg</file>
+        <file>combustible_barraicono.png</file>
+        <file>oxigeno_barra.png</file>
     </qresource>
 </RCC>

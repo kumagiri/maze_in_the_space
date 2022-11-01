@@ -2,14 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <ui_juego.h>
-
+#include "juego.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
-
-
 
 class MainWindow : public QMainWindow
 {
@@ -28,10 +25,5 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Ui::juego *ai;
-
-
-    void loadSubWindow(QWidget *widget);
-
 };
 #endif // MAINWINDOW_H

@@ -1,10 +1,10 @@
+debug/formulario.o
 debug/juego.o
 debug/main.o
 debug/mainwindow.o
 debug/puntuacion.o
-debug/usuario.o
 debug/qrc_imagenes.o
+debug/moc_formulario.o
 debug/moc_juego.o
 debug/moc_mainwindow.o
 debug/moc_puntuacion.o
-debug/moc_usuario.o

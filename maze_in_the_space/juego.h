@@ -1,13 +1,13 @@
 #ifndef JUEGO_H
 #define JUEGO_H
 
-#include <QWidget>
+#include <QDialog>
 
 namespace Ui {
 class juego;
 }
 
-class juego : public QWidget
+class juego : public QDialog
 {
     Q_OBJECT
 

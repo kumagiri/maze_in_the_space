@@ -1,13 +1,13 @@
 #ifndef PUNTUACION_H
 #define PUNTUACION_H
 
-#include <QWidget>
+#include <QDialog>
 
 namespace Ui {
 class puntuacion;
 }
 
-class puntuacion : public QWidget
+class puntuacion : public QDialog
 {
     Q_OBJECT
 

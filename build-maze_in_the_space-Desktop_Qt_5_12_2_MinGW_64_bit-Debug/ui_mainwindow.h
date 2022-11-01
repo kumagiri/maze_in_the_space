@@ -21,55 +21,29 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QPushButton *comenzar;
     QPushButton *puntuacion;
     QPushButton *salir;
-    QPushButton *comenzar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(900, 540);
+        MainWindow->resize(900, 500);
+        MainWindow->setStyleSheet(QString::fromUtf8("#centralwidget{\n"
+"background-image: url(:/menu1.png);\n"
+"}"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        centralwidget->setStyleSheet(QString::fromUtf8("#centralwidget{\n"
-"background-image:url(://menu1.png);\n"
-"}\n"
-"#comenzar{\n"
-"color:black;\n"
-"qproperty-alignement:aligncenter;\n"
-"background:teal;\n"
-"border:3px solid silver;\n"
-"border-radius:7px\n"
-"}\n"
-"#puntuacion{\n"
-"color:black;\n"
-"qproperty-alignement:aligncenter;\n"
-"background:teal;\n"
-"border:3px solid silver;\n"
-"border-radius:7px\n"
-"}\n"
-"#salir{\n"
-"color:black;\n"
-"qproperty-alignement:aligncenter;\n"
-"background:teal;\n"
-"border:3px solid silver;\n"
-"border-radius:7px\n"
-"}"));
-        puntuacion = new QPushButton(centralwidget);
-        puntuacion->setObjectName(QString::fromUtf8("puntuacion"));
-        puntuacion->setGeometry(QRect(380, 340, 180, 50));
-        QFont font;
-        font.setPointSize(20);
-        puntuacion->setFont(font);
-        salir = new QPushButton(centralwidget);
-        salir->setObjectName(QString::fromUtf8("salir"));
-        salir->setGeometry(QRect(380, 410, 180, 50));
-        salir->setFont(font);
         comenzar = new QPushButton(centralwidget);
         comenzar->setObjectName(QString::fromUtf8("comenzar"));
-        comenzar->setGeometry(QRect(380, 270, 180, 50));
-        comenzar->setFont(font);
+        comenzar->setGeometry(QRect(420, 280, 80, 24));
+        puntuacion = new QPushButton(centralwidget);
+        puntuacion->setObjectName(QString::fromUtf8("puntuacion"));
+        puntuacion->setGeometry(QRect(420, 340, 80, 24));
+        salir = new QPushButton(centralwidget);
+        salir->setObjectName(QString::fromUtf8("salir"));
+        salir->setGeometry(QRect(420, 400, 80, 24));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -79,10 +53,10 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        puntuacion->setText(QApplication::translate("MainWindow", "PUNTUACION", nullptr));
-        salir->setText(QApplication::translate("MainWindow", "SALIR", nullptr));
-        comenzar->setText(QApplication::translate("MainWindow", "COMENZAR", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Maze in the space", nullptr));
+        comenzar->setText(QApplication::translate("MainWindow", "comenzar", nullptr));
+        puntuacion->setText(QApplication::translate("MainWindow", "puntuacion", nullptr));
+        salir->setText(QApplication::translate("MainWindow", "salir", nullptr));
     } // retranslateUi
 
 };

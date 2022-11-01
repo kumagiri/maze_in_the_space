@@ -11,7 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QWidget>
+#include <QtWidgets/QDialog>
 
 QT_BEGIN_NAMESPACE
 
@@ -19,7 +19,7 @@ class Ui_puntuacion
 {
 public:
 
-    void setupUi(QWidget *puntuacion)
+    void setupUi(QDialog *puntuacion)
     {
         if (puntuacion->objectName().isEmpty())
             puntuacion->setObjectName(QString::fromUtf8("puntuacion"));
@@ -30,9 +30,9 @@ public:
         QMetaObject::connectSlotsByName(puntuacion);
     } // setupUi
 
-    void retranslateUi(QWidget *puntuacion)
+    void retranslateUi(QDialog *puntuacion)
     {
-        puntuacion->setWindowTitle(QApplication::translate("puntuacion", "Form", nullptr));
+        puntuacion->setWindowTitle(QApplication::translate("puntuacion", "Dialog", nullptr));
     } // retranslateUi
 
 };
