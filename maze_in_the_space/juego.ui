@@ -13,6 +13,16 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#juego{
+	
+	background-color: rgb(104, 106, 109);
+}
+#graphicsView{
+	
+	background-color: rgb(158, 155, 141);
+}</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout">
@@ -73,6 +83,11 @@
            <width>0</width>
            <height>300</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <underline>true</underline>
+          </font>
          </property>
          <property name="value">
           <number>24</number>

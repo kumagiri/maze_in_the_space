@@ -3,5 +3,6 @@
         <file>menu1.png</file>
         <file>combustible_barraicono.png</file>
         <file>oxigeno_barra.png</file>
+        <file>images.jpg</file>
     </qresource>
 </RCC>

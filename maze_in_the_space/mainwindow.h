@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "juego.h"
+#include "puntuacion.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,5 +26,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    juego *objeto1=new juego;
+    puntuacion *objeto2=new puntuacion;
 };
 #endif // MAINWINDOW_H

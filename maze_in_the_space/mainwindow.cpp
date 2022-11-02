@@ -16,7 +16,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_comenzar_clicked()
 {
-    juego *objeto1=new juego;
+
     objeto1->showMaximized();
     objeto1->exec();
 }
@@ -25,11 +25,15 @@ void MainWindow::on_comenzar_clicked()
 void MainWindow::on_puntuacion_clicked()
 {
 
+    objeto2->exec();
 }
 
 
 void MainWindow::on_salir_clicked()
 {
+    close();
+    objeto1->close();
+    objeto2->close();
 
 }
 

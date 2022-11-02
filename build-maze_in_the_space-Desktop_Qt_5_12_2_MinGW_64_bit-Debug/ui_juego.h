@@ -44,6 +44,14 @@ public:
         if (juego->objectName().isEmpty())
             juego->setObjectName(QString::fromUtf8("juego"));
         juego->resize(900, 700);
+        juego->setStyleSheet(QString::fromUtf8("#juego{\n"
+"	\n"
+"	background-color: rgb(104, 106, 109);\n"
+"}\n"
+"#graphicsView{\n"
+"	\n"
+"	background-color: rgb(158, 155, 141);\n"
+"}"));
         gridLayout = new QGridLayout(juego);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         horizontalLayout = new QHBoxLayout();
@@ -77,6 +85,9 @@ public:
         progressBar->setMinimumSize(QSize(30, 400));
         progressBar->setMaximumSize(QSize(16777215, 16777215));
         progressBar->setSizeIncrement(QSize(0, 300));
+        QFont font;
+        font.setUnderline(true);
+        progressBar->setFont(font);
         progressBar->setValue(24);
 
         verticalLayout->addWidget(progressBar);
