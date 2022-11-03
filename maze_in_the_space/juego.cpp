@@ -12,3 +12,9 @@ juego::~juego()
 {
     delete ui;
 }
+
+void juego::on_regresar_clicked()
+{
+    close();
+}
+

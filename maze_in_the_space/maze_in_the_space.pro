@@ -11,15 +11,21 @@ CONFIG += c++11
 SOURCES += \
     formulario.cpp \
     juego.cpp \
+    laberinto.cpp \
+    ladrillo.cpp \
     main.cpp \
     mainwindow.cpp \
-    puntuacion.cpp
+    puntuacion.cpp \
+    salida.cpp
 
 HEADERS += \
     formulario.h \
     juego.h \
+    laberinto.h \
+    ladrillo.h \
     mainwindow.h \
-    puntuacion.h
+    puntuacion.h \
+    salida.h
 
 FORMS += \
     formulario.ui \
@@ -34,3 +40,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     imagenes.qrc
+
+DISTFILES += \
+    jugadores \
+    nivel1

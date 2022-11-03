@@ -10,6 +10,7 @@
 #define UI_JUEGO_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGraphicsView>
@@ -28,16 +29,16 @@ public:
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
-    QPushButton *pushButton;
+    QPushButton *regresar;
     QLabel *label;
     QLabel *label_4;
-    QProgressBar *progressBar;
+    QProgressBar *combustible_barra;
     QGraphicsView *graphicsView;
     QVBoxLayout *verticalLayout_2;
-    QPushButton *pushButton_2;
+    QPushButton *puntuacion;
     QLabel *label_2;
     QLabel *label_3;
-    QProgressBar *progressBar_2;
+    QProgressBar *oxigeno_barra;
 
     void setupUi(QDialog *juego)
     {
@@ -58,10 +59,15 @@ public:
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        pushButton = new QPushButton(juego);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        regresar = new QPushButton(juego);
+        regresar->setObjectName(QString::fromUtf8("regresar"));
+        regresar->setMaximumSize(QSize(40, 40));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/ladrillo1.png"), QSize(), QIcon::Normal, QIcon::On);
+        regresar->setIcon(icon);
+        regresar->setIconSize(QSize(50, 50));
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(regresar, 0, Qt::AlignHCenter);
 
         label = new QLabel(juego);
         label->setObjectName(QString::fromUtf8("label"));
@@ -75,22 +81,22 @@ public:
 
         verticalLayout->addWidget(label_4);
 
-        progressBar = new QProgressBar(juego);
-        progressBar->setObjectName(QString::fromUtf8("progressBar"));
+        combustible_barra = new QProgressBar(juego);
+        combustible_barra->setObjectName(QString::fromUtf8("combustible_barra"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(progressBar->sizePolicy().hasHeightForWidth());
-        progressBar->setSizePolicy(sizePolicy);
-        progressBar->setMinimumSize(QSize(30, 400));
-        progressBar->setMaximumSize(QSize(16777215, 16777215));
-        progressBar->setSizeIncrement(QSize(0, 300));
+        sizePolicy.setHeightForWidth(combustible_barra->sizePolicy().hasHeightForWidth());
+        combustible_barra->setSizePolicy(sizePolicy);
+        combustible_barra->setMinimumSize(QSize(30, 400));
+        combustible_barra->setMaximumSize(QSize(16777215, 16777215));
+        combustible_barra->setSizeIncrement(QSize(0, 300));
         QFont font;
         font.setUnderline(true);
-        progressBar->setFont(font);
-        progressBar->setValue(24);
+        combustible_barra->setFont(font);
+        combustible_barra->setValue(24);
 
-        verticalLayout->addWidget(progressBar);
+        verticalLayout->addWidget(combustible_barra, 0, Qt::AlignHCenter);
 
 
         horizontalLayout->addLayout(verticalLayout);
@@ -102,10 +108,15 @@ public:
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        pushButton_2 = new QPushButton(juego);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        puntuacion = new QPushButton(juego);
+        puntuacion->setObjectName(QString::fromUtf8("puntuacion"));
+        puntuacion->setMaximumSize(QSize(40, 40));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/ladrillo2.png"), QSize(), QIcon::Active, QIcon::On);
+        puntuacion->setIcon(icon1);
+        puntuacion->setIconSize(QSize(50, 50));
 
-        verticalLayout_2->addWidget(pushButton_2);
+        verticalLayout_2->addWidget(puntuacion, 0, Qt::AlignHCenter);
 
         label_2 = new QLabel(juego);
         label_2->setObjectName(QString::fromUtf8("label_2"));
@@ -119,14 +130,14 @@ public:
 
         verticalLayout_2->addWidget(label_3);
 
-        progressBar_2 = new QProgressBar(juego);
-        progressBar_2->setObjectName(QString::fromUtf8("progressBar_2"));
-        sizePolicy.setHeightForWidth(progressBar_2->sizePolicy().hasHeightForWidth());
-        progressBar_2->setSizePolicy(sizePolicy);
-        progressBar_2->setMinimumSize(QSize(30, 400));
-        progressBar_2->setValue(24);
+        oxigeno_barra = new QProgressBar(juego);
+        oxigeno_barra->setObjectName(QString::fromUtf8("oxigeno_barra"));
+        sizePolicy.setHeightForWidth(oxigeno_barra->sizePolicy().hasHeightForWidth());
+        oxigeno_barra->setSizePolicy(sizePolicy);
+        oxigeno_barra->setMinimumSize(QSize(30, 400));
+        oxigeno_barra->setValue(24);
 
-        verticalLayout_2->addWidget(progressBar_2);
+        verticalLayout_2->addWidget(oxigeno_barra, 0, Qt::AlignHCenter);
 
 
         horizontalLayout->addLayout(verticalLayout_2);
@@ -143,10 +154,10 @@ public:
     void retranslateUi(QDialog *juego)
     {
         juego->setWindowTitle(QApplication::translate("juego", "Dialog", nullptr));
-        pushButton->setText(QApplication::translate("juego", "PushButton", nullptr));
+        regresar->setText(QString());
         label->setText(QApplication::translate("juego", "TextLabel", nullptr));
         label_4->setText(QString());
-        pushButton_2->setText(QApplication::translate("juego", "PushButton", nullptr));
+        puntuacion->setText(QString());
         label_2->setText(QApplication::translate("juego", "TextLabel", nullptr));
         label_3->setText(QString());
     } // retranslateUi

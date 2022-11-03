@@ -4,5 +4,7 @@
         <file>combustible_barraicono.png</file>
         <file>oxigeno_barra.png</file>
         <file>images.jpg</file>
+        <file>ladrillo1.png</file>
+        <file>ladrillo2.png</file>
     </qresource>
 </RCC>

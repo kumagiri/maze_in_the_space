@@ -15,6 +15,9 @@ public:
     explicit juego(QWidget *parent = nullptr);
     ~juego();
 
+private slots:
+    void on_regresar_clicked();
+
 private:
     Ui::juego *ui;
 };
