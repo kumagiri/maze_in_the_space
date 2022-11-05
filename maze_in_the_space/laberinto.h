@@ -1,8 +1,11 @@
 #ifndef LABERINTO_H
 #define LABERINTO_H
-
+#define ANCHO 40;
+#define ALTO 40;
 #include <string>
 #include <iostream>
+#include <QPainter>
+#include <QGraphicsItem>
 using namespace std;
 
 
@@ -13,6 +16,8 @@ private:
     float x;
     float y;
     string queTipo;
+
+
 public:
     laberinto(int x,int y,string queTipo);
     ~laberinto();
@@ -20,12 +25,12 @@ public:
     void esLadrillo();
     void esSalida();
     void mostrarLaberinto();
+    QRectF boundingRect()const;
+    void paint(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr);
 
-
-
-    float getX() const;
+    float getX();
     void setX(float newX);
-    float getY() const;
+    float getY() ;
     void setY(float newY);
 };
 

@@ -10,6 +10,12 @@ juego::juego(QWidget *parent) :
     ui(new Ui::juego)
 {
     ui->setupUi(this);
+    escena=new QGraphicsScene(this);
+    escena->setSceneRect(0,0,1100,650);
+    miLaberinto.push_front(new laberinto(0,0,"ladrillo"));
+    escena->addItem(miLaberinto[0]);
+    ui->graphicsView->setScene(escena);
+
     crearLaberinto();
 
 }

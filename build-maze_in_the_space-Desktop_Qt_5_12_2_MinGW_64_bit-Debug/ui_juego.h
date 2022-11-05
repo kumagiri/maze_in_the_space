@@ -103,6 +103,7 @@ public:
 
         graphicsView = new QGraphicsView(juego);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
+        graphicsView->setMaximumSize(QSize(2200, 700));
 
         horizontalLayout->addWidget(graphicsView);
 

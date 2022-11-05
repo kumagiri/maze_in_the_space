@@ -5,6 +5,7 @@
 #include <QVector>
 #include "laberinto.h"
 #include <QString>
+#include <QGraphicsScene>
 
 namespace Ui {
 class juego;
@@ -24,6 +25,7 @@ private slots:
 
 private:
     Ui::juego *ui;
+    QGraphicsScene *escena;
 
     QString nivel;
 

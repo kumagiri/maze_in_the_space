@@ -1,29 +1,31 @@
 #include "laberinto.h"
 #include <fstream>
 
-float laberinto::getX() const
+float laberinto::getX()
 {
     return x;
 }
 
-void laberinto::setX(float newX)
+void laberinto::setX(float x)
 {
-    x = newX;
+ this->x = x;
 }
 
-float laberinto::getY() const
+float laberinto::getY()
 {
     return y;
 }
 
-void laberinto::setY(float newY)
+void laberinto::setY(float y)
 {
-    y = newY;
+    this->y = y;
 }
 
 laberinto::laberinto(int x,int y,string queTipo)
 {
-
+    this->x=x;
+    this->y=y;
+    this->queTipo=queTipo;
 }
 
 void laberinto::abiertoOcerrado()
@@ -36,7 +38,18 @@ void laberinto::esLadrillo()
 
 }
 
+
 void laberinto::esSalida()
 {
 
+}
+
+QRectF laberinto::boundingRect() const
+{
+     return QRectF(x,y,40,40);
+}
+
+void paint(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr){
+
+    painter->drawPixmap(0,0,40,40,QPixmap(":lladrillo1.png"));
 }
