@@ -1,5 +1,6 @@
 debug/formulario.o
 debug/juego.o
+debug/laberinto.o
 debug/main.o
 debug/mainwindow.o
 debug/puntuacion.o

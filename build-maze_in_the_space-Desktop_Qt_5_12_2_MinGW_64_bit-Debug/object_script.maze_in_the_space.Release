@@ -1,5 +1,6 @@
 release/formulario.o
 release/juego.o
+release/laberinto.o
 release/main.o
 release/mainwindow.o
 release/puntuacion.o

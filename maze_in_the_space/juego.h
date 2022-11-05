@@ -2,6 +2,9 @@
 #define JUEGO_H
 
 #include <QDialog>
+#include <QVector>
+#include "laberinto.h"
+#include <QString>
 
 namespace Ui {
 class juego;
@@ -17,9 +20,18 @@ public:
 
 private slots:
     void on_regresar_clicked();
+    void crearLaberinto();
 
 private:
     Ui::juego *ui;
+
+    QString nivel;
+
+    QVector <laberinto*>miLaberinto;
+    QString archivo;
+    int x=0,y=0;
+
+
 };
 
 #endif // JUEGO_H

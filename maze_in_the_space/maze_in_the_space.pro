@@ -12,20 +12,16 @@ SOURCES += \
     formulario.cpp \
     juego.cpp \
     laberinto.cpp \
-    ladrillo.cpp \
     main.cpp \
     mainwindow.cpp \
-    puntuacion.cpp \
-    salida.cpp
+    puntuacion.cpp
 
 HEADERS += \
     formulario.h \
     juego.h \
     laberinto.h \
-    ladrillo.h \
     mainwindow.h \
-    puntuacion.h \
-    salida.h
+    puntuacion.h
 
 FORMS += \
     formulario.ui \
