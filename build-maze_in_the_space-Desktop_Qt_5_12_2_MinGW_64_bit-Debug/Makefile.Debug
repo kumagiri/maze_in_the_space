@@ -129,7 +129,8 @@ debug/qrc_imagenes.cpp: ../maze_in_the_space/imagenes.qrc \
 		../maze_in_the_space/ladrillo1.png \
 		../maze_in_the_space/menu1.png \
 		../maze_in_the_space/images.jpg \
-		../maze_in_the_space/oxigeno_barra.png
+		../maze_in_the_space/oxigeno_barra.png \
+		../maze_in_the_space/ladrillo_L.png
 	C:\Users\Usuario\Desktop\Qt\5.12.2\mingw73_64\bin\rcc.exe -name imagenes ..\maze_in_the_space\imagenes.qrc -o debug\qrc_imagenes.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
@@ -356,8 +357,19 @@ debug/moc_juego.cpp: ../maze_in_the_space/juego.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qvector2d.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtouchdevice.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QVector \
-		../maze_in_the_space/laberinto.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QString \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsScene \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/QPainter \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpainter.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtextoption.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsItem \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QRectF \
+		../maze_in_the_space/laberinto.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QObject \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
 		debug/moc_predefs.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/bin/moc.exe
 	C:\Users\Usuario\Desktop\Qt\5.12.2\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/maze_in_the_space/build-maze_in_the_space-Desktop_Qt_5_12_2_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Users/Usuario/Desktop/Qt/5.12.2/mingw73_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/maze_in_the_space/maze_in_the_space -IC:/Users/Usuario/Desktop/Qt/5.12.2/mingw73_64/include -IC:/Users/Usuario/Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets -IC:/Users/Usuario/Desktop/Qt/5.12.2/mingw73_64/include/QtGui -IC:/Users/Usuario/Desktop/Qt/5.12.2/mingw73_64/include/QtANGLE -IC:/Users/Usuario/Desktop/Qt/5.12.2/mingw73_64/include/QtCore -I. -IC:/Users/Usuario/Desktop/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Users/Usuario/Desktop/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Users/Usuario/Desktop/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Users/Usuario/Desktop/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Users/Usuario/Desktop/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Users/Usuario/Desktop/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ..\maze_in_the_space\juego.h -o debug\moc_juego.cpp
@@ -473,8 +485,19 @@ debug/moc_mainwindow.cpp: ../maze_in_the_space/mainwindow.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QDialog \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qdialog.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QVector \
-		../maze_in_the_space/laberinto.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QString \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsScene \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/QPainter \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpainter.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtextoption.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsItem \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QRectF \
+		../maze_in_the_space/laberinto.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QObject \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
 		../maze_in_the_space/puntuacion.h \
 		debug/moc_predefs.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/bin/moc.exe
@@ -846,8 +869,19 @@ debug/juego.o: ../maze_in_the_space/juego.cpp ../maze_in_the_space/juego.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qvector2d.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtouchdevice.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QVector \
-		../maze_in_the_space/laberinto.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QString \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsScene \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/QPainter \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpainter.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtextoption.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsItem \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QRectF \
+		../maze_in_the_space/laberinto.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QObject \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
 		ui_juego.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QVariant \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/QIcon \
@@ -861,13 +895,9 @@ debug/juego.o: ../maze_in_the_space/juego.cpp ../maze_in_the_space/juego.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qinputmethod.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsView \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsview.h \
-		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpainter.h \
-		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtextoption.h \
-		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qscrollarea.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qframe.h \
-		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsscene.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGridLayout \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgridlayout.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qlayout.h \
@@ -881,10 +911,101 @@ debug/juego.o: ../maze_in_the_space/juego.cpp ../maze_in_the_space/juego.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QPushButton \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qpushbutton.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
-		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QVBoxLayout
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QVBoxLayout \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\juego.o ..\maze_in_the_space\juego.cpp
 
-debug/laberinto.o: ../maze_in_the_space/laberinto.cpp ../maze_in_the_space/laberinto.h
+debug/laberinto.o: ../maze_in_the_space/laberinto.cpp ../maze_in_the_space/laberinto.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QObject \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qobject.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qobjectdefs.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qnamespace.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qglobal.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qconfig.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qtcore-config.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qsystemdetection.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qprocessordetection.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qcompilerdetection.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qtypeinfo.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qsysinfo.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qlogging.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qflags.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qatomic.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qbasicatomic.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qgenericatomic.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qatomic_msvc.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qglobalstatic.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qmutex.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qnumeric.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qversiontagging.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qstring.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qchar.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qbytearray.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qrefcount.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qarraydata.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qstringliteral.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qstringalgorithms.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qstringview.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qstringbuilder.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qlist.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qalgorithms.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qiterator.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qhashfunctions.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qpair.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qbytearraylist.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qstringlist.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qregexp.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qstringmatcher.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qcoreevent.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qscopedpointer.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qmetatype.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qvarlengtharray.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qcontainerfwd.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qobject_impl.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsItem \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtguiglobal.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtgui-config.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qvariant.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qmap.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qdebug.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qhash.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qtextstream.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qiodevice.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qlocale.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qshareddata.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qvector.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qpoint.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qset.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qcontiguouscache.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qsharedpointer.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qrect.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qmargins.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qsize.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpainterpath.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qmatrix.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpolygon.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qregion.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qwindowdefs.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qdatastream.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/qline.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpixmap.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpaintdevice.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qcolor.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qrgb.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qrgba64.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qimage.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpixelformat.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtransform.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsPixmapItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\laberinto.o ..\maze_in_the_space\laberinto.cpp
 
 debug/main.o: ../maze_in_the_space/main.cpp ../maze_in_the_space/mainwindow.h \
@@ -998,8 +1119,19 @@ debug/main.o: ../maze_in_the_space/main.cpp ../maze_in_the_space/mainwindow.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QDialog \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qdialog.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QVector \
-		../maze_in_the_space/laberinto.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QString \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsScene \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/QPainter \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpainter.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtextoption.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsItem \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QRectF \
+		../maze_in_the_space/laberinto.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QObject \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
 		../maze_in_the_space/puntuacion.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QApplication \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qapplication.h \
@@ -1121,8 +1253,19 @@ debug/mainwindow.o: ../maze_in_the_space/mainwindow.cpp ../maze_in_the_space/mai
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QDialog \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qdialog.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QVector \
-		../maze_in_the_space/laberinto.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QString \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsScene \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/QPainter \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qpainter.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtGui/qtextoption.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsItem \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QRectF \
+		../maze_in_the_space/laberinto.h \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QObject \
+		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
 		../maze_in_the_space/puntuacion.h \
 		ui_mainwindow.h \
 		../../../../Desktop/Qt/5.12.2/mingw73_64/include/QtCore/QVariant \

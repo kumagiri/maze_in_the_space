@@ -73,6 +73,9 @@
          <property name="pixmap">
           <pixmap resource="imagenes.qrc">:/combustible_barraicono.png</pixmap>
          </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
@@ -169,6 +172,9 @@
          </property>
          <property name="pixmap">
           <pixmap resource="imagenes.qrc">:/oxigeno_barra.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
          </property>
         </widget>
        </item>

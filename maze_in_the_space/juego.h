@@ -3,9 +3,14 @@
 
 #include <QDialog>
 #include <QVector>
-#include "laberinto.h"
+
 #include <QString>
 #include <QGraphicsScene>
+#include <QPainter>
+#include <QGraphicsItem>
+#include <QRectF>
+#include "laberinto.h"
+
 
 namespace Ui {
 class juego;
@@ -25,13 +30,13 @@ private slots:
 
 private:
     Ui::juego *ui;
-    QGraphicsScene *escena;
+    QGraphicsScene *scene;
+    QVector<laberinto*> miLaberinto;
 
     QString nivel;
 
-    QVector <laberinto*>miLaberinto;
-    QString archivo;
-    int x=0,y=0;
+    int bloque=0;
+    int x=-5,y=-44;
 
 
 };

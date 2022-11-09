@@ -1,37 +1,28 @@
 #ifndef LABERINTO_H
 #define LABERINTO_H
-#define ANCHO 40;
-#define ALTO 40;
-#include <string>
-#include <iostream>
-#include <QPainter>
+
+#include <QObject>
 #include <QGraphicsItem>
-using namespace std;
+#include <QGraphicsPixmapItem>
 
-
-class laberinto
+class laberinto:public QObject,
+                public QGraphicsPixmapItem
 {
 private:
-
-    float x;
-    float y;
-    string queTipo;
-
-
+    int x;
+    int y;
 public:
-    laberinto(int x,int y,string queTipo);
+    laberinto(QGraphicsItem *lab =0);
     ~laberinto();
-    void abiertoOcerrado();
-    void esLadrillo();
-    void esSalida();
-    void mostrarLaberinto();
-    QRectF boundingRect()const;
-    void paint(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr);
 
-    float getX();
-    void setX(float newX);
-    float getY() ;
-    void setY(float newY);
+
+
+    void posicion(int newX, int newY);
+    void posicion();
+    int getX() const;
+    void setX(int newX);
+    int getY() const;
+    void setY(int newY);
 };
 
-#endif // LABERINTO_H
+#endif // LABERINTO1_H

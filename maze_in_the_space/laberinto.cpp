@@ -1,55 +1,46 @@
 #include "laberinto.h"
-#include <fstream>
 
-float laberinto::getX()
-{
-    return x;
-}
 
-void laberinto::setX(float x)
-{
- this->x = x;
-}
 
-float laberinto::getY()
+
+int laberinto::getY() const
 {
     return y;
 }
 
-void laberinto::setY(float y)
+void laberinto::setY(int newY)
 {
-    this->y = y;
+    y = newY;
 }
 
-laberinto::laberinto(int x,int y,string queTipo)
+laberinto::laberinto(QGraphicsItem *lab):QGraphicsPixmapItem(lab)
 {
-    this->x=x;
-    this->y=y;
-    this->queTipo=queTipo;
+    setPixmap(QPixmap(":/ladrillo_L.png"));
 }
 
-void laberinto::abiertoOcerrado()
+laberinto::~laberinto()
+{
+    setPos(x,y);
+}
+
+void laberinto::posicion(int newX, int newY)
+{
+    x=newX;
+    y=newY;
+    setPos(x,y);
+}
+
+void laberinto::posicion()
 {
 
 }
 
-void laberinto::esLadrillo()
+int laberinto::getX() const
 {
-
+    return x;
 }
 
-
-void laberinto::esSalida()
+void laberinto::setX(int newX)
 {
-
-}
-
-QRectF laberinto::boundingRect() const
-{
-     return QRectF(x,y,40,40);
-}
-
-void paint(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr){
-
-    painter->drawPixmap(0,0,40,40,QPixmap(":lladrillo1.png"));
+    x = newX;
 }

@@ -78,6 +78,7 @@ public:
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setMaximumSize(QSize(80, 80));
         label_4->setPixmap(QPixmap(QString::fromUtf8(":/combustible_barraicono.png")));
+        label_4->setScaledContents(true);
 
         verticalLayout->addWidget(label_4);
 
@@ -128,6 +129,7 @@ public:
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setMaximumSize(QSize(80, 80));
         label_3->setPixmap(QPixmap(QString::fromUtf8(":/oxigeno_barra.png")));
+        label_3->setScaledContents(true);
 
         verticalLayout_2->addWidget(label_3);
 
