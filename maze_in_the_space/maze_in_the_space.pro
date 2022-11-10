@@ -35,8 +35,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    imagenes.qrc
+    imagenes.qrc \
+    texto.qrc
 
-DISTFILES += \
-    jugadores \
-    nivel1
+DISTFILES +=

@@ -10,7 +10,9 @@
 #include <QGraphicsItem>
 #include <QRectF>
 #include "laberinto.h"
-
+#include <QFile>
+#include <QTextStream>
+#include <QChar>
 
 namespace Ui {
 class juego;
@@ -33,10 +35,14 @@ private:
     QGraphicsScene *scene;
     QVector<laberinto*> miLaberinto;
 
-    QString nivel;
+    QString nivel,contenido;
+    QChar dato2;
 
     int bloque=0;
-    int x=-5,y=-44;
+    int x=-5,y=-44,car;
+
+    QTextStream io;
+    QFile file;
 
 
 };
