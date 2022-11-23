@@ -6,6 +6,8 @@
 #include <QPixmap>
 #include "ui_juego.h"
 
+using namespace std;
+
 
 using namespace std;
 juego::juego(QWidget *parent) :
@@ -17,6 +19,7 @@ juego::juego(QWidget *parent) :
     scene->setSceneRect(0,0,1100,600);
 
     ui->graphicsView->setScene(scene);
+    QTextStream(stdout)<<"iniciar"<<endl;
 
 /*    for(int j=0;j<14;j++){
 
@@ -52,87 +55,52 @@ void juego::crearLaberinto()
 {
     nivel="1";
     if(nivel=="1"){
-    /*ifstream archivoDeLectura ("nivel1.txt");
-    if(archivoDeLectura.is_open()){
-        string fila;
-        while(getline(archivoDeLectura,fila)){
-
-         istringstream numeroLinea(fila);
-         string dato;
-         while(getline(numeroLinea,dato,',')){
-
-             if(dato=="0"){
-
-                 miLaberinto.push_back(new laberinto());
-
-                 miLaberinto[bloque]->posicion(x,y);
-
-                 scene->addItem(miLaberinto[bloque]);
-                 bloque+=1;
-                 x+=48;
 
 
-             }
 
-             x=-5;
-             y+=49;
-         }
+        QFile inputFile("C:/nivel1.txt");
+        if(inputFile.open(QFile::ReadOnly | QFile::Text)){
+            miLaberinto.push_back(new laberinto());
+
+            miLaberinto[bloque]->posicion(x,y);
+
+            scene->addItem(miLaberinto[bloque]);
+            bloque+=1;
+            x+=48;
 
         }
+        else{
+            x=50;
+            miLaberinto.push_back(new laberinto());
 
-    }*/
-       /* arch.setFileName(":/nivel1.txt");
-        arch.open(QIODevice::Text | QIODevice::ReadOnly);
-        io.setDevice(&arch);
-        contenido=io.readAll();
-        arch.close();*/
-       file.setFileName(":/nivel1");
-        if(!file.isOpen()){
-            return;
-            /*QTextStream in(&arch);
-            while(!in.atEnd()){
-                contenido=in.readLine();
-                QVector<QChar>dato;
-                for (int i=0;i<contenido.size();i++ ) {
-                    dato.push_back(contenido[i]);
-                }
-                for (int i=0;i<contenido.size();i++ ) {
-                    if(dato[i]=="1"){
-                        miLaberinto.push_back(new laberinto());
+            miLaberinto[bloque]->posicion(x,y);
 
-                        miLaberinto[bloque]->posicion(x,y);
-
-                        scene->addItem(miLaberinto[bloque]);
-                        bloque+=1;
-                        x+=48;
-                    }
-
-                }
-
-                x=-5;
-                y+=49;
-
-            }
-        }*/
+            scene->addItem(miLaberinto[bloque]);
+            bloque+=1;
+            x+=48;
         }
-        for(int j=0;j<14;j++){
 
-               for(int i=0;i<23;i++){
+        /*if(inputFile.open(QIODevice::ReadOnly)){
 
-                   miLaberinto.push_back(new laberinto());
+            miLaberinto.push_back(new laberinto());
 
-                   miLaberinto[bloque]->posicion(x,y);
+            miLaberinto[bloque]->posicion(x,y);
 
-                   scene->addItem(miLaberinto[bloque]);
-                   bloque+=1;
-                   x+=48;
+            scene->addItem(miLaberinto[bloque]);
+            bloque+=1;
+            x+=48;
+            QTextStream in(&inputFile);
+                while(!in.atEnd()){
+                QString line=in.readLine();
+                qDebug()<<line;
 
-           }
-           x=-5;
-           y+=49;
-           }
-    }
+            }*/
+
+                inputFile.close();
+       // }
+
+
 
 }
 
-
+}

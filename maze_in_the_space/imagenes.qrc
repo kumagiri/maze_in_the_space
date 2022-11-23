@@ -7,5 +7,7 @@
         <file>ladrillo1.png</file>
         <file>ladrillo2.png</file>
         <file>ladrillo_L.png</file>
+        <file>astronauta_sprite.png</file>
+        <file>alien_sprite.png</file>
     </qresource>
 </RCC>

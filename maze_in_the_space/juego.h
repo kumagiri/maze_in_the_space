@@ -13,6 +13,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QChar>
+#include <QDebug>
 
 namespace Ui {
 class juego;

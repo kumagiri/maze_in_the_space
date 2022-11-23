@@ -5,7 +5,6 @@ debug/main.o
 debug/mainwindow.o
 debug/puntuacion.o
 debug/qrc_imagenes.o
-debug/qrc_texto.o
 debug/moc_formulario.o
 debug/moc_juego.o
 debug/moc_mainwindow.o
