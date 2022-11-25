@@ -30,13 +30,13 @@ public:
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
     QPushButton *regresar;
-    QLabel *label;
+    QLabel *tiempo;
     QLabel *label_4;
     QProgressBar *combustible_barra;
     QGraphicsView *graphicsView;
     QVBoxLayout *verticalLayout_2;
     QPushButton *puntuacion;
-    QLabel *label_2;
+    QLabel *cronometro;
     QLabel *label_3;
     QProgressBar *oxigeno_barra;
 
@@ -52,6 +52,13 @@ public:
 "#graphicsView{\n"
 "	\n"
 "	background-color: rgb(158, 155, 141);\n"
+"}\n"
+"#tiempo{\n"
+"color:Black;\n"
+"\n"
+"}\n"
+"#cronometro{\n"
+"color:Black;\n"
 "}"));
         gridLayout = new QGridLayout(juego);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
@@ -69,10 +76,10 @@ public:
 
         verticalLayout->addWidget(regresar, 0, Qt::AlignHCenter);
 
-        label = new QLabel(juego);
-        label->setObjectName(QString::fromUtf8("label"));
+        tiempo = new QLabel(juego);
+        tiempo->setObjectName(QString::fromUtf8("tiempo"));
 
-        verticalLayout->addWidget(label);
+        verticalLayout->addWidget(tiempo);
 
         label_4 = new QLabel(juego);
         label_4->setObjectName(QString::fromUtf8("label_4"));
@@ -120,10 +127,10 @@ public:
 
         verticalLayout_2->addWidget(puntuacion, 0, Qt::AlignHCenter);
 
-        label_2 = new QLabel(juego);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        cronometro = new QLabel(juego);
+        cronometro->setObjectName(QString::fromUtf8("cronometro"));
 
-        verticalLayout_2->addWidget(label_2);
+        verticalLayout_2->addWidget(cronometro);
 
         label_3 = new QLabel(juego);
         label_3->setObjectName(QString::fromUtf8("label_3"));
@@ -158,10 +165,10 @@ public:
     {
         juego->setWindowTitle(QApplication::translate("juego", "Dialog", nullptr));
         regresar->setText(QString());
-        label->setText(QApplication::translate("juego", "TextLabel", nullptr));
+        tiempo->setText(QApplication::translate("juego", "TextLabel", nullptr));
         label_4->setText(QString());
         puntuacion->setText(QString());
-        label_2->setText(QApplication::translate("juego", "TextLabel", nullptr));
+        cronometro->setText(QApplication::translate("juego", "TextLabel", nullptr));
         label_3->setText(QString());
     } // retranslateUi
 

@@ -21,6 +21,13 @@
 #graphicsView{
 	
 	background-color: rgb(158, 155, 141);
+}
+#tiempo{
+color:Black;
+
+}
+#cronometro{
+color:Black;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
@@ -53,7 +60,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="tiempo">
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -153,7 +160,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="cronometro">
          <property name="text">
           <string>TextLabel</string>
          </property>

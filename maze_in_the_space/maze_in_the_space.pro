@@ -9,19 +9,23 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    astronauta.cpp \
     formulario.cpp \
     juego.cpp \
     laberinto.cpp \
     main.cpp \
     mainwindow.cpp \
-    puntuacion.cpp
+    puntuacion.cpp \
+    salida.cpp
 
 HEADERS += \
+    astronauta.h \
     formulario.h \
     juego.h \
     laberinto.h \
     mainwindow.h \
-    puntuacion.h
+    puntuacion.h \
+    salida.h
 
 FORMS += \
     formulario.ui \

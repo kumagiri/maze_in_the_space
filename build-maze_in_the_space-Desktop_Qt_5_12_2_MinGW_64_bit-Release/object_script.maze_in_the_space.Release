@@ -1,11 +1,15 @@
+release/astronauta.o
 release/formulario.o
 release/juego.o
 release/laberinto.o
 release/main.o
 release/mainwindow.o
 release/puntuacion.o
+release/salida.o
 release/qrc_imagenes.o
+release/moc_astronauta.o
 release/moc_formulario.o
 release/moc_juego.o
 release/moc_mainwindow.o
 release/moc_puntuacion.o
+release/moc_salida.o

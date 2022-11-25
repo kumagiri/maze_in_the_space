@@ -3,17 +3,18 @@
 
 #include <QDialog>
 #include <QVector>
-
-#include <QString>
+#include "astronauta.h"
 #include <QGraphicsScene>
 #include <QPainter>
 #include <QGraphicsItem>
 #include <QRectF>
 #include "laberinto.h"
-#include <QFile>
-#include <QTextStream>
-#include <QChar>
+#include <QRectF>
 #include <QDebug>
+#include <QTimer>
+#include <QTime>
+#include <random>
+#include "salida.h"
 
 namespace Ui {
 class juego;
@@ -26,24 +27,38 @@ class juego : public QDialog
 public:
     explicit juego(QWidget *parent = nullptr);
     ~juego();
+    void actualizarSalidas();
+    void coliciones();
+
+protected:
+
+    void keyPressEvent(QKeyEvent *f);
 
 private slots:
     void on_regresar_clicked();
     void crearLaberinto();
+    void actualizarCronometro();
+    void actualizaEstado();
 
 private:
     Ui::juego *ui;
     QGraphicsScene *scene;
     QVector<laberinto*> miLaberinto;
+    QVector<int>puertas;
 
-    QString nivel,contenido;
-    QChar dato2;
+
 
     int bloque=0;
-    int x=-5,y=-44,car;
+    float x=-5,y=-730;
+    float x1=600,y1=70,ancho,alto;
 
-    QTextStream io;
-    QFile file;
+
+
+    astronauta *principal;
+    QTimer *timer1=new QTimer;
+    QTimer *timer2=new QTimer;
+    QTime time1;
+    QTime time2;
 
 
 };

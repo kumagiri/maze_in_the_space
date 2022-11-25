@@ -9,5 +9,8 @@
         <file>ladrillo_L.png</file>
         <file>astronauta_sprite.png</file>
         <file>alien_sprite.png</file>
+        <file>salida_ro 40x40.png</file>
+        <file>salida_ve 40x40.png</file>
+        <file>salidas.png</file>
     </qresource>
 </RCC>
